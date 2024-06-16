@@ -13,6 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     //Verifica as credenciais
     if (username === 'usuario' && password === 'senha') {
+        window.location.href="index.html";
     } else {
         alert('Credenciais inválidas. Tente novamente.');
     }
