@@ -156,6 +156,11 @@ footer {
     text-align: center;
     color: var(--color4);
 }
+/*Estilos para o cabeçalho */
+h2 {
+    color: #636363;
+}
+
 /*Estilos para os formulários */
 form {
     margin-bottom: 20px;
@@ -164,7 +169,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color:#131212;
 }
 /*Estilizando os formulários */
 input[type="text"],
@@ -184,13 +189,77 @@ button {
     border: none;
     cursor: pointer;
     float:right;
+    border-radius: 5px;
 }
 
-/*Estilos para o botão de mudar cor de fundo */
-button#changeBackground {
-    margin-bottom: 20px;
+/*Estilos para as caixas de respostas ficarem centralizadas */
+@media (min-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px; /* Espaçamento entre o formulário e o slideshow */
+    padding: 20px;
+    background-color: #575353;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 300px) {
+    form {
+        padding: 10px;
+    }
+
+    form input, form button {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+#loginForm button {
+    display: block; /* Torna o botão um bloco de nível */
+    margin: 0 auto; /* Define as margens laterais como "auto" para centralizar */
+}
 /*Estilos para a seção do banner */
 #Banner {
     margin-bottom: 20px;
