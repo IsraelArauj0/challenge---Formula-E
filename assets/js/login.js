@@ -32,3 +32,16 @@ function slideShow() {
     setTimeout(slideShow, time);
 }
 slideShow(); //Chama a função slideShow para iniciar o slideshow
+
+// Seleciona o botão pelo ID
+const button = document.getElementById('myButton');
+
+// Adiciona um evento de mouseover para mudar o cursor
+button.addEventListener('mouseover', function() {
+    document.body.style.cursor = 'pointer';
+});
+
+// Adiciona um evento de mouseout para restaurar o cursor padrão
+button.addEventListener('mouseout', function() {
+    document.body.style.cursor = 'default';
+});

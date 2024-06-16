@@ -156,6 +156,62 @@ footer {
     text-align: center;
     color: var(--color4);
 }
+/*Estilos para os formulários */
+form {
+    margin-bottom: 20px;
+}
+/*Alterando a cor de texto dos formulários */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+/*Estilizando os formulários */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+/*Estilizando os Botões */
+button {
+    padding: 10px 20px;
+    background-color:skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float:right;
+}
+
+/*Estilos para o botão de mudar cor de fundo */
+button#changeBackground {
+    margin-bottom: 20px;
+}
+
+/*Estilos para a seção do banner */
+#Banner {
+    margin-bottom: 20px;
+}
+/*Deixar o SlideShow no Centro */
+#imgBanner {
+    display: block;
+    margin: 0 auto;
+}
+#myButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+#myButton:hover {
+    background-color: #0056b3;
+}
 
 @media screen and (max-width: 768px) {
     nav {
